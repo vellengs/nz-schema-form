@@ -18,6 +18,7 @@ import { RangeWidget } from './range/range.widget';
 import { RadioWidget } from './radio/radio.widget';
 import { TagWidget } from './tag/tag.widget';
 import { RateWidget } from './rate/rate.widget';
+import { DateRangeWidget } from './date-range/date-range.widget';
 
 export class NzWidgetRegistry extends WidgetRegistry {
     constructor() {
@@ -41,6 +42,7 @@ export class NzWidgetRegistry extends WidgetRegistry {
         this.register('range', RangeWidget);
         this.register('tag', TagWidget);
         this.register('rate', RateWidget);
+        this.register('date-range', DateRangeWidget);
 
         this.register('custom', CustomWidget);
 

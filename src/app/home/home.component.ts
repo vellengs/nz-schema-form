@@ -35,6 +35,13 @@ export class HomeComponent {
                     allowHalf: true
                 }
             },
+            dateRange: {
+                type: 'string',
+                title: '时间范围',
+                widget: {
+                    id: 'date-range'
+                }
+            },
             name: {
                 type: 'string',
                 title: '姓名',
