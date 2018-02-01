@@ -47,6 +47,7 @@ import {
     TagWidget,
     RateWidget,
     DateRangeWidget,
+    SelectWidget
 } from './src/widgets';
 
 const WIDGETS: any[] = [
@@ -69,6 +70,7 @@ const WIDGETS: any[] = [
     TagWidget,
     RateWidget,
     DateRangeWidget,
+    SelectWidget
 ];
 
 // endregion
@@ -106,6 +108,7 @@ import {
     NzRadioModule,
     NzTagModule,
     NzRateModule,
+    NzSelectModule
 } from 'ng-zorro-antd';
 
 const ZORROMODULES = [
@@ -127,6 +130,7 @@ const ZORROMODULES = [
     NzRadioModule,
     NzTagModule,
     NzRateModule,
+    NzSelectModule
 ];
 // endregion
 

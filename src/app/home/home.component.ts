@@ -25,23 +25,6 @@ export class HomeComponent {
                 showDescription: true,
                 maxLength: 20
             },
-            rate: {
-                type: 'number',
-                title: '评价',
-                description: '请输入姓名，3个字以上',
-                default: 3,
-                widget: {
-                    id: 'rate',
-                    allowHalf: true
-                }
-            },
-            dateRange: {
-                type: 'string',
-                title: '时间范围',
-                widget: {
-                    id: 'date-range'
-                }
-            },
             name: {
                 type: 'string',
                 title: '姓名',
@@ -72,6 +55,20 @@ export class HomeComponent {
                 type: 'string',
                 title: '生日',
                 widget: 'date'
+            },
+            type: {
+                type: 'string',
+                title: '类型',
+                default: 'tom',
+                widget: {
+                    id: 'select',
+                    allowClear: true,
+                    data: [
+                        { value: 'jack', label: 'Jack' },
+                        { value: 'lucy', label: 'Lucy' },
+                        { value: 'tom', label: 'Tom' }
+                    ]
+                }
             },
             remark: {
                 type: 'string',
@@ -292,5 +289,5 @@ export class HomeComponent {
     };
     inlineModel = { email: 'cipchk@qq.com', name: 'cipchk' };
 
-    constructor(private msg: NzMessageService) { }
+    constructor(private msg: NzMessageService) {}
 }
